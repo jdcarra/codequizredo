@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!--This is my work not copy or used,helped by my tutor-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+         <link rel="stylesheet" href="style.css">
+         <title> Quiz App </title>
+        </head>
+
+        <body>
+<!---High score header start!-->
+<header class="top-header" id="header">
+<div class="high-scores-header">
+    <div class="inner-div">
+<button class="view-hs" id="hs-btn" type="button"><a href="#">View High Scores</a></button>
+</div>
+<div class="inner-div">
+<p class="timer">
+    Timer:80 seconds</p>
+</div>
+</div>
+</header>
+<!--Header ended here -->
+<main>
+<section class="wrapper" id="quiz-section">
+<div class="quiz-start">
+<h1 class="quiz-title">Code Quiz Challenegs</h1>
+</div>
+<div class="start-p">
+    <p class="intro-style">
+        Try to answer the following code/JavaScript related questions within the the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds !!
+    </p>
+</div>
+<!--Challeneg div end-->
+<!-- quiz start and results button-->
+
+<div class="start-results" id="start-quiz">
+<button id="start" class="start-btn all=btns">Start Quiz</button>
+</div>
+</section>
+
+<!---hiddien questions start-->
+<section class="questions-lists" id="questions">
+    <div class="questions-div">
+        <div class="lists">
+            <ul class="ul-quiz">
+                <h2 class="change" id="question">Quiz Start</h2>
+                <li class="question-list"><button id="answer-0" type="button" class="answers-btn" value="0">
+                    1) Answer 
+                </button></li>
+                <li class="question-list"><button id="answer-1" type="button" class="answers-btn" value="1"></button>
+                    2) Answer 
+                </button></li>
+                <li class="question-list"><button id="answer-2" type="button" class="answers-btn" value="2"></button>
+                    3) Answer 
+                </button></li>
+                <li class="question-list"><button id="answer-4" type="button" class="answers-btn" value="4"></button>
+                    4) Answer 
+                </button></li>
+            </ul>
+            <div id="results" class="ans-style">
+
+            </div>
+    
+        </div>
+    </div>
+</section>
+<section class="scores" id="final">
+<div class="quiz-complete">
+<div class="final-wrapper">
+<h2> Quiz Completed!!</h2>
+<p class="final-score">Your final score is: 
+    <span id="score">0</span>
+</p>
+<p class="initals-style">Enter your initials:
+<span class="initials"><input placeholder="initials" id="initials" class="input-style"></span>
+<div>
+<button class="submit-btn all-btns" id="sub-btn">Submit</button>
+</div>
+</p>
+</div>
+</div>
+</section>
+
+<section id="high-score-section">
+<div class="scores-div">
+<p class="hs-style">
+    <h2>High Score</h2>
+</p>
+<div class="scores-style">
+<!---start scores list JS-->
+<ol class="scores-list"></ol>
+</div>
+<div class="btns-sec">
+<button id="back" class="back-btn all btns">Back</button>
+<button id="clear" class="clear-btn all btns">Clear All Scores</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<script src="/assets/script.js.js"></script>
+</body>
+</html>
+
+
+
+
